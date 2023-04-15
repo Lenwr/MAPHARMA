@@ -1,0 +1,48 @@
+.toolbar{
+  display: flex;
+  height: 120px;
+  background: white;
+}
+.toolbar img{
+  height: 100px;
+  width: 400px;
+  border-style: none;
+}
+.toolbar a{
+  text-decoration: none;
+  color: black;
+}
+.nav {
+  display: flex;
+  width: 100%;
+ justify-content: flex-end;
+}
+.nav a {
+  margin-left: 20px;
+  transition: font-size 0.3s ease-out;
+}
+.nav a:hover{
+  transition-duration: 1s;
+  font-size: larger;
+}
+
+@media (max-width: 480px) {
+  .toolbar {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    padding: 10px;
+  }
+  .toolbar img {
+    height: 60px;
+    width: auto;
+  }
+  .nav {
+    display: flex;
+    flex-direction: column;
+  }
+  .nav a {
+    margin: 10px 0;
+    text-align: center;
+  }
+}

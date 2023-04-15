@@ -1,0 +1,15 @@
+.container{
+  display: flex;
+  flex-direction: column;
+}
+.image img{
+  width: 100%;
+}
+.banTexte{
+  margin: 30px;
+  padding: 20px;
+  background: #303030;
+  border-radius: 20px;
+  color: white;
+ text-align: center;
+}

@@ -1,0 +1,23 @@
+.container{
+
+}
+
+.container h1{
+  background-color: #303030;
+  color:white;
+  height: 40px;
+  padding-left: 20px;
+  padding-top: 10px;
+  border-radius: 10px;
+}
+.import{
+  margin-left: 40px;
+  margin-right: 40px;
+  font-size: large;
+}
+.export{
+  margin-top: 40px;
+  margin-left: 40px;
+  margin-right: 40px;
+  font-size: large;
+}
