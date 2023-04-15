@@ -1,9 +1,9 @@
 .toolbar{
+  margin-top: 10px;
   display: flex;
   height: 120px;
   background: white;
-  position: fixed;
-  opacity: 0.9;
+
 }
 .toolbar img{
   height: 100px;
@@ -44,7 +44,20 @@
     flex-direction: column;
   }
   .nav a {
-    margin: 10px 0;
+    margin:5px 0;
     text-align: center;
+  }
+}
+
+
+@media screen and (min-width: 768px) {
+  .toolbar {
+    display: flex;
+    height: 120px;
+    background: white;
+    position: fixed;
+    opacity: 0.9;
+    height: 100px;
+
   }
 }

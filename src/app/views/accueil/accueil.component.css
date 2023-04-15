@@ -1,8 +1,16 @@
 .container{
   display: flex;
   flex-direction: column;
-  padding-top: 140px;
 }
+@media screen and (min-width: 768px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    padding-top: 140px;
+
+  }
+}
+
 .image img{
   width: 100%;
 }
@@ -13,4 +21,12 @@
   border-radius: 20px;
   color: white;
  text-align: center;
+}
+@media screen and (min-width: 768px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    padding-top: 140px;
+
+  }
 }
