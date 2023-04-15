@@ -2,6 +2,8 @@
   display: flex;
   height: 120px;
   background: white;
+  position: fixed;
+  opacity: 0.9;
 }
 .toolbar img{
   height: 100px;

@@ -1,5 +1,6 @@
 .container{
-padding-top: 140px;
+margin-bottom: 40px;
+  padding-top: 140px;
 }
 
 .container h1{
@@ -10,14 +11,15 @@ padding-top: 140px;
   padding-top: 10px;
   border-radius: 10px;
 }
-.import{
+.aerien{
   margin-left: 40px;
   margin-right: 40px;
   font-size: medium;
 }
-.export{
+.maritime{
   margin-top: 40px;
   margin-left: 40px;
   margin-right: 40px;
   font-size: medium;
+
 }

@@ -11,6 +11,8 @@ import {MatToolbarModule} from "@angular/material/toolbar";
 import {MatIconModule} from "@angular/material/icon";
 import { AppRoutingModule } from './app-routing.module';
 import { ImportExportComponent } from './views/import-export/import-export.component';
+import { TransitDouaneComponent } from './views/transit-douane/transit-douane.component';
+import { TransportLogistiqueComponent } from './views/transport-logistique/transport-logistique.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +20,9 @@ import { ImportExportComponent } from './views/import-export/import-export.compo
     NavbarComponent,
     FooterComponent,
     AccueilComponent,
-    ImportExportComponent
+    ImportExportComponent,
+    TransitDouaneComponent,
+    TransportLogistiqueComponent
   ],
   imports: [
     BrowserModule,
