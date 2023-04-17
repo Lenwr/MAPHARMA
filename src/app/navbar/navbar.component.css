@@ -28,7 +28,7 @@
   font-size: larger;
 }
 
-@media (max-width: 480px) {
+@media (max-width: 768px) {
   .toolbar {
     display: flex;
     flex-direction: column;
@@ -39,14 +39,22 @@
     height: 60px;
     width: auto;
   }
+  .img{
+    display: none;
+  }
   .nav {
-    display: flex;
+    display: none;
     flex-direction: column;
   }
   .nav a {
     margin:5px 0;
     text-align: center;
   }
+  .navMenu{
+    transition: opacity 0.3s ease-out;
+  }
+
+
 }
 
 
@@ -61,3 +69,28 @@
 
   }
 }
+
+
+.menu{
+  margin-bottom: 10px;
+}
+.navMenu{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.navMenu a {
+  text-decoration: none;
+  color: black;
+}
+
+.mat-mdc-form-field + .mat-mdc-form-field {
+  margin-left: 8px;
+}
+
+mat-panel-title{
+
+}
+
+
+

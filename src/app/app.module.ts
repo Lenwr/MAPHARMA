@@ -13,6 +13,8 @@ import { AppRoutingModule } from './app-routing.module';
 import { ImportExportComponent } from './views/import-export/import-export.component';
 import { TransitDouaneComponent } from './views/transit-douane/transit-douane.component';
 import { TransportLogistiqueComponent } from './views/transport-logistique/transport-logistique.component';
+import {MatExpansionModule} from "@angular/material/expansion";
+import {MatDividerModule} from "@angular/material/divider";
 
 @NgModule({
   declarations: [
@@ -30,7 +32,9 @@ import { TransportLogistiqueComponent } from './views/transport-logistique/trans
     MatSidenavModule,
     MatToolbarModule,
     MatIconModule,
-    AppRoutingModule
+    AppRoutingModule,
+    MatExpansionModule,
+    MatDividerModule
   ],
   providers: [],
   bootstrap: [AppComponent]
