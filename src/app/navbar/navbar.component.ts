@@ -18,7 +18,4 @@ export class NavbarComponent implements OnInit{
     this.isMobile = window.innerWidth < 768;
     console.log(this.isMobile)
   }
-  showMenu(){
-     this.menu = !this.menu
-  }
 }
