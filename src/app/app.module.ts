@@ -15,6 +15,12 @@ import { TransitDouaneComponent } from './views/transit-douane/transit-douane.co
 import { TransportLogistiqueComponent } from './views/transport-logistique/transport-logistique.component';
 import {MatExpansionModule} from "@angular/material/expansion";
 import {MatDividerModule} from "@angular/material/divider";
+import { DevisComponent } from './navbar/devis/devis.component';
+import {MatDialogModule} from "@angular/material/dialog";
+import {MatFormFieldModule} from "@angular/material/form-field";
+import {MatButtonModule} from "@angular/material/button";
+import {MatInputModule} from "@angular/material/input";
+import {MatSelectModule} from "@angular/material/select";
 
 @NgModule({
   declarations: [
@@ -24,7 +30,8 @@ import {MatDividerModule} from "@angular/material/divider";
     AccueilComponent,
     ImportExportComponent,
     TransitDouaneComponent,
-    TransportLogistiqueComponent
+    TransportLogistiqueComponent,
+    DevisComponent
   ],
   imports: [
     BrowserModule,
@@ -34,7 +41,12 @@ import {MatDividerModule} from "@angular/material/divider";
     MatIconModule,
     AppRoutingModule,
     MatExpansionModule,
-    MatDividerModule
+    MatDividerModule,
+    MatDialogModule,
+    MatFormFieldModule,
+    MatButtonModule,
+    MatInputModule,
+    MatSelectModule
   ],
   providers: [],
   bootstrap: [AppComponent]

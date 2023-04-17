@@ -1,0 +1,53 @@
+<div class="container">
+<mat-dialog-content>
+  <header>
+    Demander un devis
+  </header>
+
+    <mat-form-field appearance="outline">
+      <mat-label>Choisir</mat-label>
+      <mat-select>
+        <mat-option value="option">Madame</mat-option>
+        <mat-option value="option">Mademoiselle</mat-option>
+        <mat-option value="option">Monsieur</mat-option>
+      </mat-select>
+    </mat-form-field>
+
+
+    <mat-form-field appearance="outline">
+      <input matInput placeholder="Nom">
+      <mat-icon matSuffix >person </mat-icon>
+    </mat-form-field>
+
+  <p>
+    <mat-form-field appearance="outline">
+      <input matInput placeholder="Prénoms">
+      <mat-icon matSuffix >person </mat-icon>
+    </mat-form-field>
+  </p>
+  <p>
+    <mat-form-field appearance="outline">
+      <input matInput placeholder="Email">
+      <mat-icon matSuffix >email </mat-icon>
+    </mat-form-field>
+  </p>
+  <p><mat-form-field appearance="outline">
+    <mat-label>Phone number</mat-label>
+   <input matInput placeholder="Telephone">
+    <mat-icon matSuffix>phone</mat-icon>
+    <mat-hint>Include area code</mat-hint>
+  </mat-form-field>
+  </p>
+  <mat-form-field appearance="outline" >
+    <mat-label> Votre message </mat-label>
+    <textarea matInput></textarea>
+  </mat-form-field>
+
+</mat-dialog-content>
+  <mat-dialog-actions align="end">
+    <button mat-raised-button color="primary"> Envoyer </button>
+    <button mat-raised-button color="warn" mat-dialog-close=""> annuler </button>
+  </mat-dialog-actions>
+
+
+</div>

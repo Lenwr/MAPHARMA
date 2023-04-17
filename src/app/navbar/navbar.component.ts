@@ -1,4 +1,6 @@
 import {Component, HostListener, OnInit} from '@angular/core';
+import {DevisComponent} from "./devis/devis.component";
+import {MatDialog} from "@angular/material/dialog";
 
 @Component({
   selector: 'app-navbar',
@@ -9,6 +11,8 @@ export class NavbarComponent implements OnInit{
     ngOnInit(): void {
       this.isMobile = window.innerWidth < 768;
     }
+constructor(private matDialog : MatDialog) {
+}
    isMobile: boolean = false ;
    menu: boolean =  false
 
@@ -18,4 +22,13 @@ export class NavbarComponent implements OnInit{
     this.isMobile = window.innerWidth < 768;
     console.log(this.isMobile)
   }
+  openDialog(){
+    this.matDialog.open(DevisComponent,{
+      width : '350px' ,
+      height : '500px'
+
+    })
+  }
+
+
 }
