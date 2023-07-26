@@ -24,6 +24,9 @@ import {MatMenuModule} from "@angular/material/menu";
 import { NavbarComponent } from './navbar/navbar.component';
 import { HomeComponent } from './home/home.component';
 import { FooterComponent } from './footer/footer.component';
+import { ParticulierComponent } from './particulier/particulier.component';
+import { PharmacieComponent } from './pharmacie/pharmacie.component';
+import { ContactComponent } from './contact/contact.component';
 
 @NgModule({
   declarations: [
@@ -31,6 +34,9 @@ import { FooterComponent } from './footer/footer.component';
     NavbarComponent,
     HomeComponent,
     FooterComponent,
+    ParticulierComponent,
+    PharmacieComponent,
+    ContactComponent,
 
   ],
     imports: [

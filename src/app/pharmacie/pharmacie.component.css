@@ -1,0 +1,18 @@
+.container{
+  display: flex;
+  flex-direction: column;
+
+}
+.banniere{
+background-image: url("../../assets/pharmacie/banniere.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  height: 80vh;
+}
+.body1{
+  width: 100%;
+  height: 100vh;
+  background-color: #cccccc;
+}

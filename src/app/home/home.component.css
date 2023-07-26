@@ -81,9 +81,8 @@ height: 80vh;
   font-size: x-large;
 }
 .texteLeft button{
-   align-self: start;
-  margin: 5vh;
   background-color: var(--secondary-color);
+  margin-bottom: 5vh;
   font-size: 10px;
  }
 .texteLeft button:hover{
@@ -218,12 +217,13 @@ span p{
 }
 .familleLeft{
   width: 30%;
-  height: 30vh;
+  height: 40vh;
   box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
   background-color: ghostwhite;
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
 }
 .familleLeft p{
   color: var(--primary-color);
@@ -232,7 +232,7 @@ span p{
 }
 .familleLeft span{
   color: slategrey;
-  font-size: large;
+  font-size: small;
   margin: 10px 40px 0px 40px;
   text-align: justify;
 }
