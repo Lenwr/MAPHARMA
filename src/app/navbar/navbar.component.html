@@ -1,79 +1,11 @@
+
+
 <div class="container">
-  <mat-toolbar class="toolbar">
-    <a class="img" routerLink="/" >
-      <img src="../../assets/logo.jpeg" alt="" />
-    </a>
-    <div class="nav">
-      <a routerLink="accueil">
-        <span>Accueil</span>
-      </a>
-      <a routerLink="importExport">
-        <p>Import - Export</p>
-      </a>
-
-      <a routerLink="transit">
-        <p>Transit - Douanes</p>
-      </a>
-
-      <a routerLink="transport">
-        <p>Transports et Logistique</p>
-      </a>
-    </div>
-  </mat-toolbar>
-
-
-  <div  *ngIf="isMobile" [ngClass]="{'navbar-collapse': isMobile}"  id="navMenu" class="menu">
-    <mat-accordion>
-      <mat-expansion-panel hideToggle >
-        <mat-expansion-panel-header>
-          <img src="../../assets/logo.jpeg" alt="" />
-        </mat-expansion-panel-header>
-
-      </mat-expansion-panel>
-      <mat-expansion-panel (opened)="panelOpenState = true"
-                           (closed)="panelOpenState = false"
-
-                           class="menu-panel">
-        <mat-expansion-panel-header>
-          <mat-panel-title>
-            Menu
-          </mat-panel-title>
-        </mat-expansion-panel-header>
-        <div class="navMenu">
-          <a routerLink="accueil">
-            <mat-divider></mat-divider>
-            <p>Accueil</p>
-            <mat-divider></mat-divider>
-          </a>
-          <mat-divider></mat-divider>
-          <a routerLink="importExport">
-            <p>Import - Export</p>
-            <mat-divider></mat-divider>
-          </a>
-
-          <a routerLink="transit">
-            <p>Transit - Douanes</p>
-            <mat-divider></mat-divider>
-          </a>
-
-          <a routerLink="transport">
-            <p>Transports et Logistique</p>
-            <mat-divider></mat-divider>
-          </a>
-          <span>
-            <mat-dialog-actions (click)="openDialog()">
-            Demander un devis
-              </mat-dialog-actions>
-            </span>
-        </div>
-      </mat-expansion-panel>
-    </mat-accordion>
-  </div>
-
-
-
-
-
+<mat-toolbar>
+  <span> <img src="" alt="" srcset="./assets/Mapharma.png"></span>
+  <span class="right"><a href="">Accueil</a></span>
+  <span class="right"><a href="#particulier">Particulier</a></span>
+  <span class="right"><a href="#pharmacie">Pharmacie</a></span>
+  <span class="contact" ><a href="#contact">Contact</a></span>
+</mat-toolbar>
 </div>
-
-

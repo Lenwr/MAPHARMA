@@ -1,76 +1,110 @@
 .container{
   display: flex;
-  flex-direction: row;
-  height: 150px;
-  background-color: #303030;
+  flex-direction: column;
+}
+.up{
+  background-color: #01313d;
+  height: 200px;
+}
+.down{
+  display: flex;
+  align-items: center;
   justify-content: space-between;
-}
-.left{
- margin-top: 10px;
-  margin-left: 80px;
+  background-color: #002028;
+  height: 30px;
   color: white;
+
 }
-.left a {
-  text-decoration: none;
-  color: white;
+.down span{
+  letter-spacing: 2px;
 }
-.cardContact{
+.rx{
+  width: 1%;
+  justify-self: flex-end;
+  margin-right: 30px;
+}
+.up{
   display: flex;
   flex-direction: row;
+  align-content: center;
 }
-.cardContact h3{
-  margin-left: 10px;
+.col1 {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  height: 70%;
+  margin-left: 20vH;
+  margin-top: 5vh;
 }
-.center{
-  text-align: center;
+.col1 p{
+  font-size:small;
+  color: white;
+  font-weight: normal;
+}
+.newslater{
+  display: flex;
+  align-items: center; /* Aligne les éléments verticalement sur la même ligne */
+  height: 50px;
+}
+.newslater input{
   margin-top: 20px;
+  height: 70%; /* Prend la hauteur de la ligne parente */
+  padding: 5px;
+  width: 50%;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  border: 1px solid black;
+}
+.newslater button{
+  margin-top: 20px;
+  margin-left: 20px;
+  height: 100%; /* Prend la hauteur de la ligne parente */
+  padding: 10px 20px;
+  background-color: #97c126;
+  border: 0px ;
+  border-radius: 2px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   color: white;
 }
-.center a {
-  text-decoration: none;
+ .newslater button:hover{
+   background-color: #33a6df;
+ }
+ .col2{
+   display: flex;
+   flex-direction: column;
+   width: 12%;
+   height: 40%;
+   margin-left: 2vH;
+   margin-top: 5vh;
+   padding-left: 5vh;
+ }
+.col2 p{
+  font-size: small;
   color: white;
-}
-.right{
-  background-color: white;
-  width: 400px;
-  height: 110px;
-  padding-right: 30px;
-  border-radius: 15px;
-  text-align: end ;
-  margin-top: 10px;
-  margin-right: 10px;
-  padding-top: 10px;
-  color:  #303030;
-
+  font-weight: normal;
 }
 
-@media only screen and (max-width: 600px) {
-  .container{
-    flex-direction: column;
-    height: auto;
-    align-items: center;
-  }
-  .left{
-    margin: 10px 0 0 0;
-    text-align: center;
-  }
-  .left a {
-    display: block;
-    margin-bottom: 10px;
-  }
-  .cardContact{
-    flex-direction: column;
-    align-items: center;
-  }
-  .center{
-    margin-top: 20px;
-    text-align: center;
-  }
-  .right{
-    width: 100%;
-    margin: 10px 0;
-    border-radius: 0;
-    text-align: center;
-    padding: 10px 0;
-  }
+.col3{
+  display: flex;
+  flex-direction: column;
+  width: 15%;
+
+  margin-top: 5vh;
+
 }
+.col3 p{
+  font-size:small;
+  color: white;
+  font-weight: normal;
+}
+
+.col img{
+  width: 100%;
+  margin-left: 5vH;
+}
+.icon img{
+  width: 10%;
+  margin-right: 2vh;
+}
+
+
+

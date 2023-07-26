@@ -1,96 +1,24 @@
-.toolbar{
-  margin-top: 10px;
-  display: flex;
-  height: 120px;
-  background: white;
+.right{
+  margin-right: 40px;
+  font-size: small;
+}
+.right:hover{
+  cursor: pointer;
+  color: #33a6df;
+}
+.contact{
+  margin-right: 40px;
+  font-size: small;
+  background-color: #97c126;
+  padding: 5px 15px 5px 15px;
+  border-radius: 20px;
+}
 
+span img{
+  width: 5%;
 }
-.toolbar img{
-  height: 100px;
-  width: 400px;
-  border-style: none;
-}
-.toolbar a{
+a{
   text-decoration: none;
-  color: black;
+  color: inherit;
 }
-.nav {
-  display: flex;
-  width: 100%;
- justify-content: flex-end;
-}
-.nav a {
-  margin-left: 20px;
-  transition: font-size 0.3s ease-out;
-}
-.nav a:hover{
-  transition-duration: 1s;
-  font-size: larger;
-}
-
-@media (max-width: 768px) {
-  .toolbar {
-    display: flex;
-    flex-direction: column;
-    height: auto;
-    padding: 10px;
-  }
-  .toolbar img {
-    height: 60px;
-    width: auto;
-  }
-  .img{
-    display: none;
-  }
-  .nav {
-    display: none;
-    flex-direction: column;
-  }
-  .nav a {
-    margin:5px 0;
-    text-align: center;
-  }
-  .navMenu{
-    transition: opacity 0.3s ease-out;
-  }
-
-
-}
-
-
-@media screen and (min-width: 768px) {
-  .toolbar {
-    display: flex;
-    height: 120px;
-    background: white;
-    position: fixed;
-    opacity: 0.9;
-    height: 100px;
-
-  }
-}
-
-
-.menu{
-  margin-bottom: 10px;
-}
-.navMenu{
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-}
-.navMenu a {
-  text-decoration: none;
-  color: black;
-}
-
-.mat-mdc-form-field + .mat-mdc-form-field {
-  margin-left: 8px;
-}
-
-mat-panel-title{
-
-}
-
-
 
