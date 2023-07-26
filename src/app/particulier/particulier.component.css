@@ -1,0 +1,9 @@
+.banniere{
+  width: 100%;
+  height: 70vh;
+  background-image: url("../../assets/partenaire/banniere.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom;
+
+}
