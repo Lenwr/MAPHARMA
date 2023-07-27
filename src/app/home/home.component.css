@@ -8,38 +8,6 @@
   flex-direction: column;
   align-items: center;
 }
-.primeTexte{
-  width: 50%;
-  text-align: center;
-}
-.bannierePrime{
-  display: flex;
-  flex-direction: column;
-  align-items: end;
-  justify-content: center;
-}
-.Subtitle{
-  font-size: x-large;
-  line-height: 30px;
-  color: var(--secondary-color);
-  margin-top: 20px;
-  text-align: center;
-}
-.Title{
-  margin-top: 20px;
-  font-family: Raleway;
-  font-size: 80px;
-  color: var(--primary-color);
-}
-.banniere img{
-  width: 40%;
-  height: auto;
-}
-.texteUp{
-  width: 50%;
-  text-align: justify;
-  font-size: large;
-}
 
 .ban{
   display: flex;
@@ -69,56 +37,6 @@
   justify-content: space-between;
   color: var(--primary-color);
 
-}
-.texteLeft:hover{
-}
-.texteLeft p{
-  margin: 5vh;
-  font-size: x-large;
-}
-.texteLeft button{
-  background-color: var(--secondary-color);
-  margin-bottom: 5vh;
-  font-size: 10px;
- }
-.texteLeft button:hover{
- background-color: var(--primary-color);
-}
-
-
-
-.texteRight{
-  width: 15%;
-  height: 40%;
-  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-  display: flex;
-  font-size: large;
-  border-radius: 10px;
-  flex-direction: column;
-  align-items: center ;
-  line-height: 40px;
-  justify-content: space-between;
-  margin: 2vh;
-  color: var(--primary-color);
-
-}
-.texteRight:hover{
-
-}
-.texteRight p{
-  text-align: center;
-  margin: 5vh;
-  font-size: x-large;
-}
-.texteRight button{
-  align-self: start;
-  font-size: 10px;
-  margin-left: 3vh;
-  margin-bottom: 5vh;
-  background-color: var(--secondary-color);
-}
-.texteRight button:hover{
-  background-color: var(--primary-color);
 }
 .ruban{
   width: 100%;
