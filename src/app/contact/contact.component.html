@@ -1,1 +1,41 @@
-<p>contact works!</p>
+
+<div class="container">
+
+  <h1>Nous contacter</h1>
+
+  <form class="contact"  action="https://formsubmit.co/saidabou.lateam@gmail.com" method="post" >
+    <mat-form-field>
+      <mat-label>Nom</mat-label>
+      <input name="nom" matInput>
+    </mat-form-field>
+
+    <mat-form-field>
+      <mat-label>Prénoms</mat-label>
+      <input name="prenom" matInput>
+    </mat-form-field>
+
+    <mat-form-field>
+      <mat-label>Choisir</mat-label>
+      <mat-select >
+        <mat-option   value="one">Je suis un particulier </mat-option>
+        <mat-option value="two">Je suis une Pharmacie</mat-option>
+      </mat-select>
+    </mat-form-field>
+      <mat-form-field>
+        <mat-label>Email</mat-label>
+        <input matInput name="email" placeholder="pat@example.com" [formControl]="email" required>
+        <mat-error *ngIf="email.invalid">{{getErrorMessage()}}</mat-error>
+      </mat-form-field>
+    <mat-form-field>
+      <mat-label>Objet : </mat-label>
+      <input name="objet" matInput>
+    </mat-form-field>
+    <mat-form-field>
+      <mat-label>Message</mat-label>
+      <textarea name="Message" matInput></textarea>
+    </mat-form-field>
+    <input type="hidden" name="_template" value="table">
+    <button type="submit" mat-raised-button>Envoyer</button>
+  </form>
+
+</div>
