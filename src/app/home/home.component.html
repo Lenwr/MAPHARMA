@@ -4,28 +4,19 @@
   </div>
 
 
-    <mat-card class="example-card">
+    <mat-card class="underBanner">
       <mat-card-header>
-        <mat-card-title>Bienvenue sur Mapharma</mat-card-title>
-        <mat-card-subtitle>{{currentSentence}}</mat-card-subtitle>
+        <mat-card-title>
+          <h2>Bienvenue sur Mapharma</h2>
+        </mat-card-title>
+        <mat-card-subtitle>
+          <p>{{currentSentence}}</p>
+        </mat-card-subtitle>
       </mat-card-header>
-      <img mat-card-image src="../../assets/banniere%20mapharma.png">
-      <mat-card-content>
-        <h2>
-          Facilitez votre accès aux médicaments avec Mapharma
-        </h2>
-        <p>
-
-          Mapharma est votre passerelle numérique vers une expérience pharmaceutique
-          moderne et pratique. Nous pouvons en relation les pharmacies de confiance avec
-          les particuliers, leur permettant de commander directement leurs médicaments en ligne,
-          à tout moment et en toute simplicité.
-
-        </p>
-        </mat-card-content>
+      <img *ngIf="isMobile" mat-card-image src="../../assets/banniere%20mapharma.png">
     </mat-card>
 
-  <mat-card class="example-card">
+  <mat-card *ngIf="isMobile" class="example-card">
 
     <img mat-card-image src="../../assets/mapharmaMob.svg">
     <mat-card-content class="choice">
@@ -47,11 +38,12 @@
        </mat-card-actions>
 
 
+
     </mat-card-content>
   </mat-card>
 
 
-  <div *ngIf="style"  class="banniere" id="banniere">
+  <div *ngIf="!isMobile"  class="banniere" id="banniere">
 
     <div class="ban">
 
@@ -77,9 +69,23 @@
 
 
   </div>
+     <mat-card>
+       <mat-card-content>
+         <h2>
+           Facilitez votre accès aux médicaments avec Mapharma
+         </h2>
+         <p>
 
+           Mapharma est votre passerelle numérique vers une expérience pharmaceutique
+           moderne et pratique. Nous pouvons en relation les pharmacies de confiance avec
+           les particuliers, leur permettant de commander directement leurs médicaments en ligne,
+           à tout moment et en toute simplicité.
 
-  <div *ngIf="style" class="famille">
+         </p>
+       </mat-card-content>
+     </mat-card>
+
+  <div *ngIf="!isMobile" class="famille">
     <div class="familleLeft">
       <p>Pourquoi Choisir Mapharma</p>
       <span>

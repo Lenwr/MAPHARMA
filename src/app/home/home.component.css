@@ -1,6 +1,44 @@
-.bannierePrime{
-
+.bannierePrime img{
+  width: 100%;
+  height: auto;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom;
 }
+mat-card-header{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+mat-card-title h2{
+  text-align: center;
+  color: var(--primary-color);
+  font-size: xx-large;
+}
+mat-card-subtitle p{
+  font-size: medium;
+  text-align: center;
+  color: var(--secondary-color);
+}
+
+mat-card-content{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+mat-card-content h2{
+  text-align: center;
+  color: var(--primary-color);
+  font-size: xx-large;
+}
+mat-card-content p{
+  width: 60%;
+  font-size: medium;
+  text-align: center;
+  color: var(--secondary-color);
+}
+
 .banniere{
   width: 100%;
   height: 100vh;
@@ -8,6 +46,7 @@
   flex-direction: column;
   align-items: center;
 }
+
 
 .ban{
   display: flex;
@@ -24,9 +63,8 @@
 
 
 .texteLeft{
-  width: 15%;
-  margin-right: 30vh;
-  height: 40%;
+  width: 17%;
+  height: 25%;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   display: flex;
   font-size: large;
@@ -37,6 +75,31 @@
   justify-content: space-between;
   color: var(--primary-color);
 
+}
+
+
+.texteLeft button{
+  margin-bottom: 5vh;
+}
+
+.texteRight{
+  width: 17%;
+  height: 25%;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  display: flex;
+  font-size: large;
+  border-radius: 10px;
+  flex-direction: column;
+  align-items: center;
+  line-height: 40px;
+  justify-content: space-between;
+  color: var(--primary-color);
+  background-color: white;
+
+}
+.texteRight button{
+  margin-bottom: 5vh;
+  width: 80%;
 }
 .ruban{
   width: 100%;

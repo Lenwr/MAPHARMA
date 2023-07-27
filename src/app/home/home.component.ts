@@ -1,11 +1,13 @@
 import {AfterViewInit, Component, OnInit} from '@angular/core';
+import { BreakpointObserver, Breakpoints } from '@angular/cdk/layout';
+
 
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.css']
 })
-export class HomeComponent implements AfterViewInit{
+export class HomeComponent implements AfterViewInit , OnInit{
 
   sentences: string[] = ['Soyez au premier plan de l\'innovation pharmaceutique avec Mapharma ',
     ' connectez-vous aux besoins de vos clients, où qu\'ils soient !'];
@@ -13,6 +15,20 @@ export class HomeComponent implements AfterViewInit{
   currentSentence: string = '';
   style : boolean = false
 
+  isMobile ?: boolean
+
+
+  constructor(private breakpointObserver: BreakpointObserver) {
+  }
+
+  ngOnInit() {
+    this.breakpointObserver.observe([
+      Breakpoints.HandsetPortrait,
+      Breakpoints.HandsetLandscape
+    ]).subscribe(result => {
+      this.isMobile = result.matches;
+    });
+  }
   ngAfterViewInit() {
     this.writeSentences();
   }
