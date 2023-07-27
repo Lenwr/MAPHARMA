@@ -1,33 +1,35 @@
-.container{
-  display: flex;
-  flex-direction: column;
-}
-.up{
+/* Styles de base pour tous les écrans */
+
+.up {
   background-color: #01313d;
   height: 200px;
 }
-.down{
+
+.down {
   display: flex;
   align-items: center;
   justify-content: space-between;
   background-color: #002028;
   height: 30px;
   color: white;
-
 }
-.down span{
+
+.down span {
   letter-spacing: 2px;
 }
-.rx{
+
+.rx {
   width: 1%;
   justify-self: flex-end;
   margin-right: 30px;
 }
-.up{
+
+.up {
   display: flex;
   flex-direction: row;
   align-content: center;
 }
+
 .col1 {
   display: flex;
   flex-direction: column;
@@ -36,74 +38,153 @@
   margin-left: 10vH;
   margin-top: 5vh;
 }
-.col1 p{
-  font-size:small;
-  color: white;
-  font-weight: normal;
-}
-.newslater{
-  display: flex;
-  align-items: center; /* Aligne les éléments verticalement sur la même ligne */
-  height: 50px;
-}
-.newslater input{
-  margin-top: 20px;
-  height: 70%; /* Prend la hauteur de la ligne parente */
-  padding: 5px;
-  width: 50%;
-  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-  border: 1px solid black;
-}
-.newslater button{
-  margin-top: 20px;
-  margin-left: 20px;
-  height: 100%; /* Prend la hauteur de la ligne parente */
-  padding: 10px 20px;
-  background-color: #97c126;
-  border: 0px ;
-  border-radius: 2px;
-  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-  color: white;
-}
- .newslater button:hover{
-   background-color: #33a6df;
- }
- .col2{
-   display: flex;
-   flex-direction: column;
-   width: 12%;
-   height: 40%;
-   margin-left: 2vH;
-   margin-top: 5vh;
-   padding-left: 5vh;
- }
-.col2 p{
+
+.col1 p {
   font-size: small;
   color: white;
   font-weight: normal;
 }
 
-.col3{
+.newslater {
+  display: flex;
+  align-items: center;
+  height: 50px;
+}
+
+.newslater input {
+  margin-top: 20px;
+  height: 70%;
+  padding: 5px;
+  width: 50%;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  border: 1px solid black;
+}
+
+.newslater button {
+  margin-top: 20px;
+  margin-left: 20px;
+  height: 100%;
+  padding: 10px 20px;
+  background-color: #97c126;
+  border: 0px;
+  border-radius: 2px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  color: white;
+}
+
+.newslater button:hover {
+  background-color: #33a6df;
+}
+
+.col2 {
   display: flex;
   flex-direction: column;
-  width: 20%;
+  width: 12%;
+  height: 40%;
+  margin-left: 2vH;
   margin-top: 5vh;
 
 }
-.col3 p{
-  font-size:small;
+
+.col2 p {
+  font-size: small;
   color: white;
   font-weight: normal;
 }
 
-.col img{
-  width: 100%;
-  margin-left: 5vH;
+.col3 {
+  display: flex;
+  flex-direction: column;
+  width: 20%;
+  margin-top: 5vh;
 }
-.icon img{
+
+.col3 p {
+  font-size: small;
+  color: white;
+  font-weight: normal;
+}
+
+.col img {
+  width: 100%;
+}
+
+.icon img {
   width: 10%;
   margin-right: 2vh;
 }
 
+/* Styles pour les appareils mobiles (par exemple, smartphones) */
+@media screen and (max-width: 767px) {
+  .up {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: auto;
 
+  }
 
+  .col {
+    width: 100%;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .col1 {
+    width: 100%;
+    margin-left: 0;
+    margin-top: 20px;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .col2 {
+    width: 100%;
+    margin-left: 0;
+    margin-top: 20px;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .col3 {
+    width: 100%;
+    margin-top: 20px;
+    align-items: center;
+    justify-content: center;
+  }
+  .icon{
+    width: 100%;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+/* Styles pour les appareils tablettes */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .up {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .col1 {
+    width: 100%;
+    margin-left: 0;
+    margin-top: 20px;
+  }
+
+  .col2 {
+    width: 100%;
+    margin-left: 0;
+    margin-top: 20px;
+  }
+
+  .col3 {
+    width: 100%;
+    margin-top: 20px;
+  }
+}

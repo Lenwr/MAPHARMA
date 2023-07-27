@@ -1,9 +1,41 @@
-.banniere{
+.banniere img{
   width: 100%;
-  height: 70vh;
-  background-image: url("../../assets/partenaire/banniere.jpeg");
+  height: auto;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: bottom;
 
+}
+.card{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: auto;
+}
+mat-card-actions{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+mat-card-actions button:hover{
+ background-color: var(--primary-color);
+}
+mat-card-content h2{
+  text-align: center;
+  color: var(--primary-color);
+}
+mat-card-title{
+  text-align: center;
+  color: var(--primary-color);
+}
+mat-card-subtitle{
+  text-align: center;
+  color: var(--secondary-color);
+}
+mat-card-content p{
+text-align: justify;
+}
+
+mat-card:hover{
+;
 }

@@ -8,10 +8,10 @@ import {AfterViewInit, Component, OnInit} from '@angular/core';
 export class HomeComponent implements AfterViewInit{
 
   sentences: string[] = ['Soyez au premier plan de l\'innovation pharmaceutique avec Mapharma ',
-    ' connectez-vous aux besoins de vos clients, où qu\'ils soient !',
-    ' La pharmacie de demain est ici'];
+    ' connectez-vous aux besoins de vos clients, où qu\'ils soient !'];
   currentIndex: number = 0;
   currentSentence: string = '';
+  style : boolean = false
 
   ngAfterViewInit() {
     this.writeSentences();

@@ -1,16 +1,57 @@
 <div class="container" xmlns="http://www.w3.org/1999/html">
   <div class="bannierePrime">
-    <div class="primeTexte">
-      <p class="Subtitle">Bienvenue sur</p>
-      <p class="Title">MAPHARMA</p>
-      <p class="Subtitle">{{currentSentence}}</p></div>
-
+    <img src="../../assets/banniere.jpeg" alt="">
   </div>
-  <div class="banniere" id="banniere">
 
-    <div class="texteUp">
-      <p class="Subtitle"> Facilitez votre accès aux médicaments avec Mapharma </p>
-    </div>
+
+    <mat-card class="example-card">
+      <mat-card-header>
+        <mat-card-title>Bienvenue sur Mapharma</mat-card-title>
+        <mat-card-subtitle>{{currentSentence}}</mat-card-subtitle>
+      </mat-card-header>
+      <img mat-card-image src="../../assets/banniere%20mapharma.png">
+      <mat-card-content>
+        <h2>
+          Facilitez votre accès aux médicaments avec Mapharma
+        </h2>
+        <p>
+
+          Mapharma est votre passerelle numérique vers une expérience pharmaceutique
+          moderne et pratique. Nous pouvons en relation les pharmacies de confiance avec
+          les particuliers, leur permettant de commander directement leurs médicaments en ligne,
+          à tout moment et en toute simplicité.
+
+        </p>
+        </mat-card-content>
+    </mat-card>
+
+  <mat-card class="example-card">
+
+    <img mat-card-image src="../../assets/mapharmaMob.svg">
+    <mat-card-content class="choice">
+       <p>
+        Je suis une Pharmacie
+       </p>
+       <mat-card-actions>
+         <button type="submit" mat-raised-button>
+           Rejoignez-nous
+         </button>
+       </mat-card-actions>
+         <p>
+           Je suis un Particulier
+         </p>
+         <mat-card-actions>
+           <button type="submit" mat-raised-button>
+             Commandez maintenant
+           </button>
+       </mat-card-actions>
+
+
+    </mat-card-content>
+  </mat-card>
+
+
+  <div *ngIf="style"  class="banniere" id="banniere">
 
     <div class="ban">
 
@@ -38,7 +79,7 @@
   </div>
 
 
-  <div class="famille">
+  <div *ngIf="style" class="famille">
     <div class="familleLeft">
       <p>Pourquoi Choisir Mapharma</p>
       <span>
