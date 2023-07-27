@@ -46,3 +46,9 @@ mat-card-content p{
 mat-card:hover{
 ;
 }
+.example-card , .example-card mat-card-content{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}

@@ -6,6 +6,13 @@
   background-position: bottom;
 
 }
+.example-card , .example-card mat-card-content{
+display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
 .card{
   display: flex;
   align-items: center;
